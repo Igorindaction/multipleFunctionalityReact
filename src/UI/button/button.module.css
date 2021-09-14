@@ -1,0 +1,7 @@
+.buttonDefault{
+    color: blue;
+    width: auto;
+    height: 35px;
+    padding: 0 15px;
+    border: 1px solid teal
+}

@@ -1,0 +1,30 @@
+.postContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.title, .text{
+    padding-left: 1%;
+    padding-bottom: 2%;
+}
+
+.title{
+    padding-top: 1%;
+}
+
+.postWrapper{
+    width: auto;
+
+    border: 2px solid lightskyblue;
+    height: auto;
+    display: flex;
+}
+
+.buttonWrapper{
+    align-items: center;
+    display: flex;
+    padding-right: 2%;
+}
