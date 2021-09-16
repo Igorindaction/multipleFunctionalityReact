@@ -6,6 +6,7 @@ import s from './navbar.module.css'
 
 const Navbar = () => {
     const {isAuth, setIsAuth} = useContext(AuthContext)
+    const {modal, setModal} = useContext(AuthContext)
 
     const logout = () => {
         setIsAuth(false)
@@ -13,7 +14,12 @@ const Navbar = () => {
     }
     return (
         <div className={s.navBar}>
-            <ButtonDefault onClick={(logout)}>Выйти</ButtonDefault>
+            {isAuth && <div>
+                <ButtonDefault onClick={(logout)}>Выйти</ButtonDefault>
+                <Link to='/posts'> <ButtonDefault onClick={() => setModal(true)} style={{'marginLeft': '30px'}}>Создать посты</ButtonDefault></Link></div>
+}
+            
+
             <div className={s.navBarLinks}>
                 <Link to='/about'>О проекте</Link>
                 <Link to='/posts'>Посты</Link>

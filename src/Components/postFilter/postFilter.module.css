@@ -1,0 +1,9 @@
+.selectWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.portionsWrapper{
+    display: flex;
+    align-items: center
+}

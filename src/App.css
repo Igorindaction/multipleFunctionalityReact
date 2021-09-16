@@ -1,6 +1,17 @@
 .App {
   
 }
+li{
+  padding-left: 20px;
+  padding-top: 5px;
+  letter-spacing: 1px;
+}
+li:first-child{
+  padding-top: 20px;
+}
+ul{
+  font-size: 30px;
+}
 .button-wrapper{
   display: flex;
   justify-content: center;
@@ -41,4 +52,8 @@
 
 .postContainer{
   text-align: left;
+}
+
+.flex{
+  display: flex;
 }

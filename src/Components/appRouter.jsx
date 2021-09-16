@@ -6,7 +6,6 @@ import { AuthContext } from './context/authContext';
 
 const AppRouter = () => {
     const {isAuth, isLoading} = useContext(AuthContext)
-    console.log(isLoading)
     if(isLoading){
         return <Loader />
     }
@@ -18,7 +17,7 @@ const AppRouter = () => {
                     {PrivateRoutes.map((route, index) => 
                         <Route path={route.path} exact={route.exact} component={route.component} key={index}/>    
                     )}
-                    <Redirect to='/posts' />    
+                    <Redirect to='/about' />    
                 </Switch>
 
             :   <Switch>   

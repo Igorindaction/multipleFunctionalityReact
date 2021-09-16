@@ -12,6 +12,7 @@ const PostInfo = () => {
 
 
     const [openPost, isLoading, postError] = useFetching( async() => {
+        // @ts-ignore
         const response = await PostService.getPageInfo(params.id)
         setPost(response.data);
     })    
@@ -20,8 +21,9 @@ const PostInfo = () => {
         setComments(response.data);
     })
     useEffect(() => {
-        console.log('сработала юзэффект')
+        // @ts-ignore
         openPost(params.id)
+        // @ts-ignore
         showComments(params.id)
       }, [])  
 

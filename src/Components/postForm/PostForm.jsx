@@ -6,7 +6,6 @@ import DefaultInput from '../../UI/defaultInput/DefaultInput';
 const PostForm = ({create}) => {
     const [post, setPost] = useState({ title: '', text: '' })
 
-
     function addNewPost(e) {
         e.preventDefault()
         const newPost={
@@ -16,9 +15,6 @@ const PostForm = ({create}) => {
         setPost({ title: '', text: '' })
     }
 
-    // function searchPost(){
-        
-    // }
     return (
         <div>
             <form>

@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import { useMemo } from 'react';
 
 
 
@@ -7,7 +7,6 @@ export const IteratingPages = (totalPages) => {
     const iteratingArray = useMemo(() => {
       for (let i = 0; i < totalPages; i++){
         pagesArray.push(i + 1)
-        console.log('перебор массива')
       }
     },[totalPages, pagesArray])
 

@@ -4,6 +4,7 @@ import ButtonDefault from 'UI/button/ButtonDefault';
 import DefaultInput from '../../UI/defaultInput/DefaultInput';
 
 const Login = () => {
+    // @ts-ignore
     const {isAuth, setIsAuth} = useContext(AuthContext)
 
     const autohrization = event => {

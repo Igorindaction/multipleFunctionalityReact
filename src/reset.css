@@ -41,3 +41,6 @@ input, textarea {
   outline: none;
   border: none;
 }
+select{
+  outline: none;
+}
