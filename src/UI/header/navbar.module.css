@@ -14,3 +14,15 @@
 .navBarLinks a{
     padding: 0 20px;
 }
+
+.aboutWrapper{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.buttonsWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}

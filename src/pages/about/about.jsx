@@ -7,6 +7,8 @@ const About = () => {
                 <li>Проект написан с помощью CRA</li>
                 <li>Проект реализован с помощью хуков (функциональной компонента)</li>
                 <li>Внутри проекта используются такие хуки, как: useState, useMemo, useEffect, useContext, useHistory, useRef, useParams</li>
+                <li>На странице логина настроена валидация с помощью библиотеки Formik</li>
+                <li>В проекте используются localStorage</li>
                 <li>В проекте используются кастомные хуки</li>
                 <li>Работа с <a rel="noreferrer" target="_blank" style={{textDecoration: "underline", color: "blue"}} href="https://jsonplaceholder.typicode.com/">сервером</a>. Axios</li>
                 <li>В проекте настроено: поиск постов, фильтрация постов</li>

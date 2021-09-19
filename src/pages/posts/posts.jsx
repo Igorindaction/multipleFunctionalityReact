@@ -49,6 +49,10 @@ function Posts() {
     setModal(false)
   }
 
+  const showPostsDefault = () => {
+    setPosts(posts)
+  }
+
   const removePost = (post) => {
     setPosts(posts.filter(p => p.id !== post.id))
   }
@@ -63,7 +67,7 @@ function Posts() {
     <div className="App">
       {postError && <div>Произошла ошбика {postError}</div>}
       <ModalWindow visible={modal} setVisible={setModal}>
-        <PostForm create={createPost} />
+        <PostForm create={createPost} posts={posts}/>
       </ModalWindow>
         <PostFilter filter={filter} setFilter={setFilter} limit={limit} setLimit={setLimit}/>
       <PostList sortedAndSearchedPosts={sortedAndSearchedPosts} removePost={removePost}/> 

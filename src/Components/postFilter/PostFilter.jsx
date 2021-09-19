@@ -19,7 +19,8 @@ const PostFilter = ({filter, setFilter, limit, setLimit}) => {
                     defaultName='Сортировка'
                     options={[
                         { value: 'title', name: 'По заголовку' },
-                        { value: 'body', name: 'По тексту' }
+                        { value: 'body', name: 'По тексту' },
+                        { value: '', name: 'Сбросить' }
                     ]}
                 />
                 <div className={s.portionsWrapper}>
